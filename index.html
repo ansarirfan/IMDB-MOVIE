@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    
+    <div class = "wrapper">
+        <!-- logo -->
+        <div class = "logo">
+            <div class = "container">
+                <p>IMdB<span>Movie.</span></p>
+            </div>
+        </div>
+        <!-- end of logo -->
+        <h1>By <span> Irfan</span> </h1>
+        <!-- search container -->
+        <div class = "search-container">
+            <div class = "search-element">
+                <h3>Search Movie:</h3>
+                <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+
+                <div class = "search-list" id = "search-list">
+                    <!-- list here -->
+                     <div class = "search-list-item">
+                        <div class = "search-item-thumbnail">
+                            <img src = "mzr.jpg">
+                        </div>
+                        <div class = "search-item-info">
+                            <h3>Maiz Runner: The Death Cure Vol. 3</h3>
+                            <p>2018</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- end of search container -->
+
+        <!-- result container -->
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                    <!-- movie information here -->
+                    <div class = "movie-poster">
+                        <img src = "mzr.jpg" alt = "movie poster">
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title">Maiz Runner: The Death Cure Vol.3</h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year">Year: 2018</li>
+                            <li class = "rated">Ratings: PG-13</li>
+                            <li class = "released">Released: 
+                              January 26, 2018 (United Kingdom) </li>
+                        </ul>
+                        <p class = "genre"><b>Genre:</b> 
+                          Action, Adventure, Sci-Fi, Thriller</p>
+                        <p class = "writer"><b>Writer:</b> 
+                          T.S. Nowlin(screenplay by)James Dashner(based upon the novel by)</p>
+                        <p class = "actors"><b>Stars: </b>
+                          Dylan O'BrienKi Hong LeeKaya Scodelario</p>
+                        <p class = "plot"><b>Plot:</b> In the epic finale to The Maze Runner Saga,
+                           Thomas leads his group of escaped Gladers on their final and most dangerous
+                            mission yet. To save their friends, they must break into the legendary last
+                             city, a WCKD controlled labyrinth that may turn out to be the deadliest maze of all.
+                              Anyone who makes it out alive will get the answers to the questions the Gladers 
+                              have been asking since they first arrived in the maze. Will Thomas and the crew 
+                              make it out alive? Or will Ava Paige get her way?.</p>
+                        <p class = "language"><b>Language:</b> English</p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- end of result container -->
+    </div>
+
+
+    <!-- movie app js -->
+    <script src = "script.js"></script>
+</body>
+</html>
